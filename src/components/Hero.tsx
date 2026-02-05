@@ -82,7 +82,7 @@ export function Hero() {
             color: '#ff6b6b',
             fontWeight: 500,
           }}>
-            LIVE SYNC ACTIVE
+            AUTO-SYNC IS WORKING
           </span>
         </div>
 
@@ -98,9 +98,9 @@ export function Hero() {
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
         }}>
-          Build Everything
+          No Button Needed
           <br />
-          Ship Anywhere
+          It Just Syncs!
         </h1>
 
         {/* Subtitle */}
