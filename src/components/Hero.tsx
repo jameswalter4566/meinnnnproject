@@ -12,7 +12,7 @@ export function Hero() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '120px 24px',
-      background: 'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
+      background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%)',
       position: 'relative',
       overflow: 'hidden',
     }}>
@@ -82,7 +82,7 @@ export function Hero() {
             color: '#ff6b6b',
             fontWeight: 500,
           }}>
-            WEBHOOK TEST - Changed from GitHub!
+            LIVE SYNC ACTIVE
           </span>
         </div>
 
@@ -93,14 +93,14 @@ export function Hero() {
           color: '#ffffff',
           lineHeight: 1.1,
           margin: '0 0 24px',
-          background: 'linear-gradient(135deg, #ffffff 0%, #a29bfe 50%, #fd79a8 100%)',
+          background: 'linear-gradient(135deg, #00f5d4 0%, #00bbf9 50%, #9b5de5 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
         }}>
-          This Was Pushed
+          Build Everything
           <br />
-          From GitHub!
+          Ship Anywhere
         </h1>
 
         {/* Subtitle */}
@@ -113,8 +113,8 @@ export function Hero() {
           marginLeft: 'auto',
           marginRight: 'auto',
         }}>
-          If you can see this dark purple page with pink text, the webhook worked
-          and the pull brought these changes into your project!
+          Real-time GitHub sync powered by webhooks. Push code from anywhere
+          and watch your project update instantly.
         </p>
 
         {/* CTA Buttons */}
