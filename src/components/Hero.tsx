@@ -1,4 +1,4 @@
-himport { useState } from 'react';
+import { useState } from 'react';
 
 export function Hero() {
   const [isHovered, setIsHovered] = useState(false);
@@ -12,7 +12,7 @@ export function Hero() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '120px 24px',
-      background: 'linear-gradient(135deg, #ff0000 0%, #ff6600 100%)',
+      background: 'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
       position: 'relative',
       overflow: 'hidden',
     }}>
@@ -23,21 +23,21 @@ export function Hero() {
         right: '10%',
         width: '300px',
         height: '300px',
-        background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+        background: 'linear-gradient(135deg, #ff6b6b, #feca57)',
         borderRadius: '50%',
-        opacity: 0.1,
+        opacity: 0.15,
         animation: 'float 6s ease-in-out infinite',
       }} />
-      
+
       <div style={{
         position: 'absolute',
         bottom: '15%',
         left: '5%',
         width: '200px',
         height: '200px',
-        background: 'linear-gradient(135deg, #10b981, #06b6d4)',
+        background: 'linear-gradient(135deg, #a29bfe, #fd79a8)',
         borderRadius: '50%',
-        opacity: 0.15,
+        opacity: 0.2,
         animation: 'float 8s ease-in-out infinite reverse',
       }} />
 
@@ -48,7 +48,7 @@ export function Hero() {
         transform: 'translate(-50%, -50%)',
         width: '1000px',
         height: '1000px',
-        background: 'radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(162, 155, 254, 0.1) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -65,24 +65,24 @@ export function Hero() {
           alignItems: 'center',
           gap: '8px',
           padding: '8px 20px',
-          background: 'rgba(59, 130, 246, 0.1)',
-          border: '1px solid rgba(59, 130, 246, 0.2)',
+          background: 'rgba(255, 107, 107, 0.15)',
+          border: '1px solid rgba(255, 107, 107, 0.3)',
           borderRadius: '100px',
           marginBottom: '32px',
         }}>
           <div style={{
             width: '8px',
             height: '8px',
-            background: '#10b981',
+            background: '#ff6b6b',
             borderRadius: '50%',
             animation: 'pulse 2s infinite',
           }} />
-          <span style={{ 
-            fontSize: '14px', 
-            color: '#3b82f6',
+          <span style={{
+            fontSize: '14px',
+            color: '#ff6b6b',
             fontWeight: 500,
           }}>
-            Now Live - Experience the Future
+            WEBHOOK TEST - Changed from GitHub!
           </span>
         </div>
 
@@ -90,31 +90,31 @@ export function Hero() {
         <h1 style={{
           fontSize: '72px',
           fontWeight: 800,
-          color: '#1f2937',
+          color: '#ffffff',
           lineHeight: 1.1,
           margin: '0 0 24px',
-          background: 'linear-gradient(135deg, #1f2937 0%, #3b82f6 100%)',
+          background: 'linear-gradient(135deg, #ffffff 0%, #a29bfe 50%, #fd79a8 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
         }}>
-          Transform Your Digital
+          This Was Pushed
           <br />
-          Experience Today
+          From GitHub!
         </h1>
 
         {/* Subtitle */}
         <p style={{
           fontSize: '20px',
-          color: '#6b7280',
+          color: '#b2bec3',
           lineHeight: 1.6,
           margin: '0 0 48px',
           maxWidth: '600px',
           marginLeft: 'auto',
           marginRight: 'auto',
         }}>
-          Discover a revolutionary platform that combines cutting-edge technology with 
-          intuitive design. Join thousands of satisfied users who have already made the switch.
+          If you can see this dark purple page with pink text, the webhook worked
+          and the pull brought these changes into your project!
         </p>
 
         {/* CTA Buttons */}
@@ -133,19 +133,19 @@ export function Hero() {
               fontWeight: 600,
               color: '#ffffff',
               background: isHovered
-                ? 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)'
-                : 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+                ? 'linear-gradient(135deg, #e84393 0%, #fd79a8 100%)'
+                : 'linear-gradient(135deg, #ff6b6b 0%, #feca57 100%)',
               border: 'none',
               borderRadius: '12px',
               cursor: 'pointer',
               transform: isHovered ? 'translateY(-3px)' : 'translateY(0)',
               boxShadow: isHovered
-                ? '0 20px 40px rgba(59, 130, 246, 0.4)'
-                : '0 10px 30px rgba(59, 130, 246, 0.2)',
+                ? '0 20px 40px rgba(255, 107, 107, 0.4)'
+                : '0 10px 30px rgba(255, 107, 107, 0.2)',
               transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           >
-            Start Free Trial
+            Webhook Success!
           </button>
 
           <button
@@ -155,12 +155,12 @@ export function Hero() {
               padding: '16px 32px',
               fontSize: '16px',
               fontWeight: 600,
-              color: secondaryHovered ? '#3b82f6' : '#6b7280',
-              background: secondaryHovered 
-                ? 'rgba(59, 130, 246, 0.1)' 
-                : 'rgba(255, 255, 255, 0.8)',
+              color: secondaryHovered ? '#a29bfe' : '#b2bec3',
+              background: secondaryHovered
+                ? 'rgba(162, 155, 254, 0.15)'
+                : 'rgba(255, 255, 255, 0.05)',
               border: '2px solid',
-              borderColor: secondaryHovered ? '#3b82f6' : '#e5e7eb',
+              borderColor: secondaryHovered ? '#a29bfe' : 'rgba(255, 255, 255, 0.1)',
               borderRadius: '12px',
               cursor: 'pointer',
               transform: secondaryHovered ? 'translateY(-2px)' : 'translateY(0)',
@@ -169,7 +169,7 @@ export function Hero() {
               WebkitBackdropFilter: 'blur(10px)',
             }}
           >
-            Watch Demo
+            Pull Changes
           </button>
         </div>
 
@@ -181,22 +181,22 @@ export function Hero() {
           marginTop: '80px',
         }}>
           {[
-            { value: '50K+', label: 'Active Users' },
-            { value: '99.9%', label: 'Uptime' },
-            { value: '4.9/5', label: 'User Rating' },
+            { value: '🔔', label: 'Webhook Fired' },
+            { value: '✅', label: 'Sync Working' },
+            { value: '🚀', label: 'Real-Time' },
           ].map((stat, index) => (
             <div key={index} style={{ textAlign: 'center' }}>
               <div style={{
-                fontSize: '24px',
+                fontSize: '36px',
                 fontWeight: 700,
-                color: '#1f2937',
+                color: '#ffffff',
                 marginBottom: '4px',
               }}>
                 {stat.value}
               </div>
               <div style={{
                 fontSize: '14px',
-                color: '#6b7280',
+                color: '#b2bec3',
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
               }}>
