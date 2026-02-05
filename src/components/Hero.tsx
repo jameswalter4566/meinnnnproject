@@ -1,4 +1,4 @@
-import { useState } from 'react';
+himport { useState } from 'react';
 
 export function Hero() {
   const [isHovered, setIsHovered] = useState(false);
@@ -12,7 +12,7 @@ export function Hero() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '120px 24px',
-      background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+      background: 'linear-gradient(135deg, #ff0000 0%, #ff6600 100%)',
       position: 'relative',
       overflow: 'hidden',
     }}>
